@@ -1,0 +1,19 @@
+$(".btn_listado").css({'display':'none'});
+$(function(){
+	$(".btn_nuevo").click(function(){
+		$(".listado").css({'display':'none'});
+		$(".alta").css({'display':'block'});
+		$(".btn_nuevo").css({'display':'none'});
+		$(".btn_listado").css({'display':'inline-block'});
+	});
+		$(".btn_listado").click(function(){
+		$(".listado").css({'display':'block'});
+		$(".alta").css({'display':'none'});
+		$(".btn_nuevo").css({'display':'inline-block'});
+		$(".btn_listado").css({'display':'none'});
+	});
+
+	$(".btn-menu").click(function(){
+		$("nav").slideToggle(500)
+	});
+});

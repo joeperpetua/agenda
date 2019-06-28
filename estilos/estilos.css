@@ -1,0 +1,109 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	font-family: tahoma;
+}
+
+section{
+	padding: 10px;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: flex-start;
+ }
+
+.listado{
+	width: 55%;
+	height: 85vh;
+	overflow: scroll; 
+}
+
+.alta{
+	width: 35%;
+}
+
+.listado details{
+	background:#ccc;
+	padding: 10px;
+	height: 5em;
+	transition: all .2s;
+	border-bottom: 2px dashed black;
+}
+
+.listado details[open]{
+	background: #000;
+	color: #fff;
+	height: 12em;
+	border-bottom: 2px dashed white;
+}
+
+.listado summary img{
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+}
+
+.listado summary::-webkit-details-marker{
+ display: none;
+}
+
+.listado summary{
+	cursor: pointer;
+	outline: none;
+}
+
+details p{
+ line-height: 1.8em;
+}
+
+.nombre{
+	margin-left: 20px;
+}
+
+.nbr_contacto{
+	display: flex;
+	align-items: center;
+	font-size: 1.2em;
+}
+
+details > a{
+	color: chartreuse;
+	text-decoration: none;
+	font-size: 20px;
+	margin: 0 auto;	
+}
+
+
+.alta form{
+	width: 100%;
+	padding: 10px;
+	border: 1px solid #000;
+}
+
+.alta form label, .alta form input{
+	display: block;
+	width: 100%;
+	padding: 5px;
+}
+
+.alta .titulo{
+	font-size: 1.5em;
+	margin: 10px;
+	text-align: center;
+}
+
+.alta form input.insertar{
+	background: #000;
+	color: #fff;
+	margin-top: 10px;
+}
+
+.alta form input.insertar:hover{
+	background: #ccc;
+	color: #000;
+}
